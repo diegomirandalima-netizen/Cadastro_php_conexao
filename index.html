@@ -2,33 +2,40 @@
 <html lang="pt-BR"> <!-- Inicia o documento HTML e define o idioma principal como Português do Brasil. -->
 <head> <!-- Abre o cabeçalho, bloco onde ficam as configurações invisíveis da página. -->
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres UTF-8 para aceitar acentos e cedilha. -->
-        <title>Cadastro de Produtos</title> <!-- Define o título da página que aparece na aba do navegador. -->
-        </head> <!-- Fecha o cabeçalho da página. -->
-        <body> <!-- Abre o corpo da página, onde fica tudo o que o usuário consegue ver. -->
-            <h2>Cadastrar Novo Produto</h2> <!-- Exibe um título de tamanho médio na tela. -->
-                <form action="cadastrar.php" method="POST"> <!-- Inicia o formulário, enviando os dados para "cadastrar.php" via método oculto POST. -->
-                        <p> <!-- Abre um parágrafo para organizar o primeiro campo de texto. -->
-                                    <label>Nome do Produto:</label><br> <!-- Exibe o texto de etiqueta do campo e pula uma linha (<br>). -->
-                                                <input type="text" name="nome" required> <!-- Campo de texto para o nome, identificado no PHP como "nome", preenchimento obrigatório. -->
-                                                        </p> <!-- Fecha o parágrafo do primeiro campo. -->
-                                                                <p> <!-- Abre um parágrafo para o segundo campo. -->
-                                                                            <label>Categoria:</label><br> <!-- Exibe a etiqueta da categoria e pula uma linha. -->
-                                                                                        <input type="text" name="categoria" required> <!-- Campo de texto para a categoria, identificado no PHP como "categoria", obrigatório. -->
-                                                                                                </p> <!-- Fecha o parágrafo do segundo campo. -->
-                                                                                                        <p> <!-- Abre um parágrafo para o terceiro campo. -->
-                                                                                                                    <label>Preço:</label><br> <!-- Exibe a etiqueta do preço e pula uma linha. -->
-                                                                                                                                <input type="number" step="0.01" name="preco" required> <!-- Campo numérico que aceita duas casas decimais (centavos), identificado como "preco". -->
-                                                                                                                                        </p> <!-- Fecha o parágrafo do terceiro campo. -->
-                                                                                                                                                <p> <!-- Abre um parágrafo para o quarto campo. -->
-                                                                                                                                                            <label>Quantidade:</label><br> <!-- Exibe a etiqueta da quantidade e pula uma linha. -->
-                                                                                                                                                                        <input type="number" name="quantidade" required> <!-- Campo apenas para números inteiros, identificado no PHP como "quantidade". -->
-                                                                                                                                                                                </p> <!-- Fecha o parágrafo do quarto campo. -->
-                                                                                                                                                                                        <p> <!-- Abre um parágrafo para o quinto campo. -->
-                                                                                                                                                                                                    <label>Fornecedor:</label><br> <!-- Exibe a etiqueta do fornecedor e pula uma linha. -->
-                                                                                                                                                                                                                <input type="text" name="fornecedor" required> <!-- Campo de texto para o fornecedor, identificado no PHP como "fornecedor". -->
-                                                                                                                                                                                                                        </p> <!-- Fecha o parágrafo do quinto campo. -->
-                                                                                                                                                                                                                                <button type="submit">Cadastrar Produto</button> <!-- Botão de envio que dispara o formulário e manda os dados para o PHP. -->
-                                                                                                                                                                                                                                    </form> <!-- Fecha o bloco do formulário. -->
-                                                                                                                                                                                                                                    </body> <!-- Fecha o corpo da página. -->
-                                                                                                                                                                                                                                    </html> <!-- Fecha o documento HTML. →
-                                                                                                                                                                                                                                    -->
+    <title>Cadastro de Produtos</title> <!-- Define o título da página que aparece na aba do navegador. -->
+</head> <!-- Fecha o cabeçalho da página. -->
+<body> <!-- Abre o corpo da página, onde fica tudo o que o usuário consegue ver. -->
+
+    <h2>Cadastrar Novo Produto</h2> <!-- Exibe um título de tamanho médio na tela. -->
+
+    <form action="cadastrar.php" method="POST"> <!-- Inicia o formulário, enviando os dados para "cadastrar.php" via método oculto POST. -->
+        <p> <!-- Abre um parágrafo para organizar o primeiro campo de texto. -->
+            <label>Nome do Produto:</label><br> <!-- Exibe o texto de etiqueta do campo e pula uma linha (<br>). -->
+            <input type="text" name="nome" required> <!-- Campo de texto para o nome, identificado no PHP como "nome", preenchimento obrigatório. -->
+        </p> <!-- Fecha o parágrafo do primeiro campo. -->
+
+        <p> <!-- Abre um parágrafo para o segundo campo. -->
+            <label>Categoria:</label><br> <!-- Exibe a etiqueta da categoria e pula uma linha. -->
+            <input type="text" name="categoria" required> <!-- Campo de texto para a categoria, identificado no PHP como "categoria", obrigatório. -->
+        </p> <!-- Fecha o parágrafo do segundo campo. -->
+
+        <p> <!-- Abre um parágrafo para o terceiro campo. -->
+            <label>Preço:</label><br> <!-- Exibe a etiqueta do preço e pula uma linha. -->
+            <input type="number" step="0.01" name="preco" required> <!-- Campo numérico que aceita duas casas decimais (centavos), identificado como "preco". -->
+        </p> <!-- Fecha o parágrafo do terceiro campo. -->
+
+        <p> <!-- Abre um parágrafo para o quarto campo. -->
+            <label>Quantidade:</label><br> <!-- Exibe a etiqueta da quantidade e pula uma linha. -->
+            <input type="number" name="quantidade" required> <!-- Campo apenas para números inteiros, identificado no PHP como "quantidade". -->
+        </p> <!-- Fecha o parágrafo do quarto campo. -->
+
+        <p> <!-- Abre um parágrafo para o quinto campo. -->
+            <label>Fornecedor:</label><br> <!-- Exibe a etiqueta do fornecedor e pula uma linha. -->
+            <input type="text" name="fornecedor" required> <!-- Campo de texto para o fornecedor, identificado no PHP como "fornecedor". -->
+        </p> <!-- Fecha o parágrafo do quinto campo. -->
+
+        <button type="submit">Cadastrar Produto</button> <!-- Botão de envio que dispara o formulário e manda os dados para o PHP. -->
+    </form> <!-- Fecha o bloco do formulário. -->
+
+</body> <!-- Fecha o corpo da página. -->
+</html> <!-- Fecha o documento HTML. -->
