@@ -23,3 +23,4 @@ if ($conexao->query($SQL) === true) { // Executa a consulta SQL no banco e testa
 } // Fecha o bloco do teste condicional (if/else).
 
 ?>
+
