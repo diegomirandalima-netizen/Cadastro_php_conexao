@@ -27,7 +27,3 @@ if ($conexao->connect_error) {
 // Fecha o bloco do teste condicional (if).
 
 ?>
-
-Fecha a tag do PHP.
-
-}
