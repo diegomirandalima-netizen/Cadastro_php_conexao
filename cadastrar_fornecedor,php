@@ -1,0 +1,15 @@
+<?php 
+include("conexao.php"); 
+
+$nome = $_POST['nome'];    
+$telefone = $_POST['telefone']; 
+$email = $_POST['email']; // Corrigido para minúsculo
+
+$SQL = "INSERT INTO fornecedores (nome, telefone, email) VALUES ('$nome', '$telefone', '$email')"; 
+
+if ($conexao->query($SQL) === true) {
+    echo "Fornecedor cadastrado com sucesso!"; 
+} else { 
+    echo "Erro ao cadastrar fornecedor: " . $conexao->error; 
+} 
+?>
